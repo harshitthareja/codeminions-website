@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials - CodeMinions</title>
+    <meta name="description" content="Browse our complete library of coding tutorials. Learn JavaScript, Python, Web Development and more.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">&lt;/&gt;</div>
+                <span class="logo-text">CodeMinions</span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="tutorials.html" class="nav-link active">Tutorials</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="index.html#newsletter" class="nav-link btn-primary">Newsletter</a>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">All Tutorials</h1>
+            <p class="page-description">Master coding through hands-on projects and practical examples</p>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="filters-section">
+        <div class="container">
+            <div class="filters">
+                <div class="filter-group">
+                    <label>Category:</label>
+                    <select id="categoryFilter" class="filter-select">
+                        <option value="all">All Topics</option>
+                        <option value="python">Python</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label>Level:</label>
+                    <select id="levelFilter" class="filter-select">
+                        <option value="all">All Levels</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+                
+                <div class="search-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input type="text" id="searchInput" placeholder="Search tutorials...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutorials Grid -->
+    <section class="tutorials-section">
+        <div class="container">
+            <div class="tutorial-grid" id="tutorialsGrid">
+                <!-- Tutorial cards will be inserted here by JavaScript -->
+            </div>
+            
+            <div class="no-results" id="noResults" style="display: none;">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+                <h3>No tutorials found</h3>
+                <p>Try adjusting your filters or search term</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+  <div class="container">
+    <div class="footer-links">
+
+      <div class="footer-column">
+        <h3>Learn</h3>
+        <a href="tutorials.html">All Tutorials</a>
+        <a href="tutorials.html?level=beginner">Beginner</a>
+        <a href="tutorials.html?level=intermediate">Intermediate</a>
+        <a href="tutorials.html?level=advanced">Advanced</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Company</h3>
+        <a href="about.html">About</a>
+        <a href="about.html#contact">Contact</a>
+      </div>
+
+    </div>
+
+    <p class="footer-bottom">© 2026 CodeMinions</p>
+  </div>
+</footer>
+
+<script src="js/tutorials.js"></script>
+</body>
+</html>

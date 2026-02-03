@@ -1,230 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeMinions - Learn to Code with Fun Tutorials</title>
-    <meta name="description" content="Join 200+ developers learning to code through practical tutorials, tips, and projects. Master programming with CodeMinions.">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeMinions – Learn to Code with Fun Tutorials</title>
+
+  <meta
+    name="description"
+    content="Join 200+ developers learning Python through practical tutorials and projects."
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="logo">
-                <div class="logo-icon">&lt;/&gt;</div>
-                <span class="logo-text">CodeMinions</span>
-            </a>
-            
-            <div class="nav-links">
-                <a href="index.html" class="nav-link active">Home</a>
-                <a href="tutorials.html" class="nav-link">Tutorials</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="#newsletter" class="nav-link btn-primary">Newsletter</a>
-            </div>
-            
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-background">
-            <div class="grid-pattern"></div>
-            <div class="gradient-orb orb-1"></div>
-            <div class="gradient-orb orb-2"></div>
-        </div>
-        
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span class="badge-dot"></span>
-                    Join 200+ Developers
-                </div>
-                
-                <h1 class="hero-title">
-                    Learn <span class="gradient-text">Python</span><br>
-                    From Zero to Hero
-                </h1>
-                
-                <p class="hero-description">
-                    Start your coding journey with Python. Simple, practical tutorials designed 
-                    for complete beginners. No prior experience needed!
-                </p>
-                
-                <div class="hero-buttons">
-                    <a href="tutorials.html" class="btn btn-primary btn-large">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                        </svg>
-                        Watch Tutorials
-                    </a>
-                    <a href="https://youtube.com/@codeminions" target="_blank" class="btn btn-secondary btn-large">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                        </svg>
-                        YouTube Channel
-                    </a>
-                </div>
-                
-                <div class="hero-stats">
-                    <div class="stat">
-                        <div class="stat-number">200+</div>
-                        <div class="stat-label">Subscribers</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">Growing</div>
-                        <div class="stat-label">Community</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Free Content</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="hero-visual">
-                <div class="code-window">
-                    <div class="window-header">
-                        <div class="window-dots">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <div class="window-title">learn_python.py</div>
-                    </div>
-                    <div class="window-content">
-                        <pre><code><span class="code-comment"># Your Python Journey Starts Here!</span>
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">&lt;/&gt;</div>
+      <span class="logo-text">CodeMinions</span>
+    </a>
 
-<span class="code-keyword">def</span> <span class="code-method">learn_python</span>():
-    skills = []
-    
-    <span class="code-keyword">for</span> tutorial <span class="code-keyword">in</span> <span class="code-string">"CodeMinions"</span>:
-        skills.<span class="code-method">append</span>(tutorial)
-        <span class="code-keyword">print</span>(<span class="code-string">"Level up! 🚀"</span>)
-    
-    <span class="code-keyword">return</span> skills
-
-<span class="code-comment"># Start your coding adventure</span>
-<span class="code-method">learn_python</span>()
-<span class="code-comment"># Output: Level up! 🚀</span></code></pre>
-                    </div>
-                </div>
-                <div class="floating-minion">
-                    <div class="minion-character"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<!-- Featured Tutorials -->
-<section class="featured-section">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Featured Tutorials</h2>
-            <a href="tutorials.html" class="view-all">
-                View All →
-            </a>
-        </div>
-
-        <!-- ✅ FIXED -->
-        <div class="tutorial-grid" id="featuredTutorials"></div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="tutorials.html" class="nav-link">Tutorials</a>
+      <a href="about.html" class="nav-link">About</a>
+      <!-- IMPORTANT: full path, not just #newsletter -->
+      <a href="index.html#newsletter" class="nav-link btn-primary">Newsletter</a>
     </div>
-</section>
 
- <!-- NEWSLETTER -->
-<section class="newsletter-section" id="newsletter">
-    <div class="container">
-        <div class="newsletter-card">
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
 
-            <div class="newsletter-content">
-                <div class="newsletter-icon">📩</div>
-                <h2 class="newsletter-title">Stay Updated</h2>
-                <p class="newsletter-description">
-                    Get the latest tutorials and coding tips in your inbox.
-                </p>
-            </div>
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">Join 200+ Developers</div>
 
-            <form class="newsletter-form" id="newsletterForm">
-                <div class="form-row">
-                    <input type="text" id="newsletterName" placeholder="Your Name" required>
-                    <input type="email" id="newsletterEmail" placeholder="your_email@example.com" required>
-                    <button type="submit" class="btn btn-primary">
-                        Subscribe →
-                    </button>
-                </div>
-                <div class="form-message" id="newsletterMessage"></div>
-            </form>
+      <h1 class="hero-title">
+        Learn <span class="gradient-text">Python</span><br />
+        From Zero to Hero
+      </h1>
 
-        </div>
-    </div>
-</section>
+      <p class="hero-description">
+        Beginner-friendly Python tutorials with real projects.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="tutorials.html" class="btn btn-primary btn-large">
+          Watch Tutorials
+        </a>
+        <a
+          href="https://youtube.com/@minionscode"
+          target="_blank"
+          class="btn btn-secondary btn-large"
+        >
+          YouTube Channel
+        </a>
+      </div>
     </div>
   </div>
 </section>
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="logo">
-                        <div class="logo-icon">&lt;/&gt;</div>
-                        <span class="logo-text">CodeMinions</span>
-                    </div>
-                    <p class="footer-description">
-                        Empowering developers through practical, hands-on coding tutorials.
-                    </p>
-                </div>
-                
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h3>Learn</h3>
-                        <a href="tutorials.html">All Tutorials</a>
-                        <a href="tutorials.html?level=beginner">Beginner</a>
-                        <a href="tutorials.html?level=intermediate">Intermediate</a>
-                        <a href="tutorials.html?level=advanced">Advanced</a>
 
-                    </div>
-                    
-                    <div class="footer-column">
-                        <h3>Company</h3>
-                        <a href="about.html">About</a>
-                        <a href="about.html#contact">Contact</a>
-                        <a href="#newsletter">Newsletter</a>
-                    </div>
-                    
-                    <div class="footer-column">
-                        <h3>Connect</h3>
-                        <a href="https://youtube.com/@minionscode" target="_blank">YouTube</a>
-                        <a href="https://github.com/harshitthareja" target="_blank">GitHub</a>
-                        <a href="https://x.com/codeminions" target="_blank">Twitter</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2026 CodeMinions. All rights reserved.</p>
-                <div class="footer-social">
-                    <a href="https://youtube.com/@minionscode" target="_blank" aria-label="YouTube">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                        </svg>
-                    </a>
-                    <a href="https://github.com/harshitthareja" target="_blank" aria-label="GitHub">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
+<!-- ================= FEATURED ================= -->
+<section class="featured-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Featured Tutorials</h2>
+      <a href="tutorials.html" class="view-all">View All →</a>
+    </div>
+
+    <div class="tutorial-grid" id="featuredTutorials"></div>
+  </div>
+</section>
+
+<!-- ================= NEWSLETTER ================= -->
+<section class="newsletter-section" id="newsletter">
+  <div class="container">
+    <div class="newsletter-card">
+
+      <div class="newsletter-content">
+        <div class="newsletter-icon">📩</div>
+        <h2 class="newsletter-title">Stay Updated</h2>
+        <p class="newsletter-description">
+          Get the latest Python tutorials directly in your inbox.
+        </p>
+      </div>
+
+      <form class="newsletter-form" id="newsletterForm">
+        <div class="form-row">
+          <input
+            type="text"
+            id="newsletterName"
+            placeholder="Your Name"
+            required
+          />
+          <input
+            type="email"
+            id="newsletterEmail"
+            placeholder="your_email@example.com"
+            required
+          />
+          <button type="submit" class="btn btn-primary">
+            Subscribe →
+          </button>
         </div>
-    </footer>
 
-    <script src="js/main.js"></script>
+        <div class="form-message" id="newsletterMessage"></div>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-icon">&lt;/&gt;</div>
+          <span class="logo-text">CodeMinions</span>
+        </div>
+        <p class="footer-description">
+          Empowering developers through practical tutorials.
+        </p>
+      </div>
+
+      <div class="footer-links">
+
+        <div class="footer-column">
+          <h3>Learn</h3>
+          <a href="tutorials.html">All Tutorials</a>
+          <a href="tutorials.html?level=beginner">Beginner</a>
+          <a href="tutorials.html?level=intermediate">Intermediate</a>
+          <a href="tutorials.html?level=advanced">Advanced</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Company</h3>
+          <a href="about.html">About</a>
+          <a href="about.html#contact">Contact</a>
+          <a href="index.html#newsletter">Newsletter</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Connect</h3>
+          <a href="https://youtube.com/@minionscode" target="_blank">YouTube</a>
+          <a href="https://github.com/harshitthareja" target="_blank">GitHub</a>
+          <a href="https://x.com/codeminions" target="_blank">Twitter</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 CodeMinions. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= JS ================= -->
+<script src="js/main.js"></script>
 </body>
 </html>
